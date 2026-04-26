@@ -1,5 +1,6 @@
 "use client";
 import { ArrowUpRight } from 'lucide-react';
+import Image from 'next/image';
 
 const solutions = [
   {
@@ -60,10 +61,12 @@ export function Services() {
               {/* Image Container */}
               <div className="w-full aspect-[4/3] overflow-hidden mb-12 relative bg-black/20">
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/0 transition-colors duration-700 z-10 mix-blend-overlay"></div>
-                <img 
+                <Image 
                   src={solution.image} 
                   alt={solution.title} 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-all duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)]"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-all duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)]"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
 

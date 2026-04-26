@@ -1,5 +1,6 @@
 "use client";
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 
 export function AboutUs() {
@@ -17,10 +18,12 @@ export function AboutUs() {
             className="absolute inset-0"
           >
             <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-1000 z-10"></div>
-            <img 
+            <Image 
               src="/about-us.png" 
               alt="Ideal Energy Boardroom" 
-              className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-1000"
+              fill
+              className="object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-1000"
+              sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </motion.div>
         </div>

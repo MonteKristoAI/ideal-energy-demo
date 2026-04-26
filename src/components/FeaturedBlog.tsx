@@ -1,5 +1,6 @@
 "use client";
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 
 export function FeaturedBlog() {
@@ -38,10 +39,12 @@ export function FeaturedBlog() {
           {/* Image Container */}
           <div className="w-full lg:w-3/5 relative rounded-3xl overflow-hidden aspect-[4/3] lg:aspect-[16/10]">
             <div className="absolute inset-0 bg-black/30 group-hover:bg-transparent transition-colors duration-700 z-10"></div>
-            <img 
+            <Image 
               src="/blog-image.png" 
               alt="BESS Technology" 
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)]"
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)]"
+              sizes="(max-width: 1024px) 100vw, 60vw"
             />
           </div>
 
