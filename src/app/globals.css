@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #041122;
+  --color-brand-secondary: #00E5FF;
+  --color-brand-accent: #FFC107;
+  --color-brand-bg: #0A0F1C;
+  --color-brand-surface: #1E293B;
+  
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-heading: 'Poppins', system-ui, sans-serif;
+}
+
+@layer utilities {
+  @keyframes slowZoom {
+    0% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+}
+
+@layer base {
+  html {
+    @apply antialiased scroll-smooth;
+  }
+  
+  body {
+    @apply bg-brand-bg text-white font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+}
