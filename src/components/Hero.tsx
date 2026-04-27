@@ -65,13 +65,13 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
             className="flex flex-col sm:flex-row items-center gap-6"
           >
-            <button className="group w-full sm:w-auto flex items-center justify-center gap-4 bg-yellow-400 text-black px-8 py-4 rounded-full font-semibold uppercase tracking-widest text-xs transition-all hover:bg-yellow-300">
-              Calculate Your ROI
+            <a href="/#quote" className="group w-full sm:w-auto flex items-center justify-center gap-4 bg-yellow-400 text-black px-8 py-4 rounded-full font-semibold uppercase tracking-widest text-xs transition-all hover:bg-yellow-300">
+              Get a Free Quote
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </button>
-            <button className="group w-full sm:w-auto flex items-center justify-center gap-4 bg-white/5 text-white border border-white/10 px-8 py-4 rounded-full font-semibold uppercase tracking-widest text-xs transition-all hover:bg-white/10 hover:border-white/20">
-              View Executive Brief
-            </button>
+            </a>
+            <a href="/contact" className="group w-full sm:w-auto flex items-center justify-center gap-4 bg-white/5 text-white border border-white/10 px-8 py-4 rounded-full font-semibold uppercase tracking-widest text-xs transition-all hover:bg-white/10 hover:border-white/20">
+              Contact Us
+            </a>
           </motion.div>
 
           {/* Trust Indicators */}

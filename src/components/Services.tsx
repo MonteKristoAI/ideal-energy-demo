@@ -2,36 +2,40 @@
 import { ArrowUpRight } from 'lucide-react';
 import Image from 'next/image';
 
-const solutions = [
+const services = [
   {
     number: '01',
     title: 'Energy Procurement',
     description: 'Secure competitive energy rates with long-term price stability and protection from market volatility.',
-    image: '/procurement.png'
+    image: '/procurement.png',
+    link: '/services#procurement'
   },
   {
     number: '02',
     title: 'Cost Reduction',
     description: 'Identify systemic inefficiencies and significantly reduce overall operational energy expenses.',
-    image: '/cost.png'
+    image: '/cost.png',
+    link: '/services#cost'
   },
   {
     number: '03',
     title: 'Energy Efficiency',
     description: 'Optimize facilities and systems to lower energy consumption and enhance structural performance.',
-    image: '/efficiency.png'
+    image: '/efficiency.png',
+    link: '/services#efficiency'
   },
   {
     number: '04',
-    title: 'Sustainability Solutions',
+    title: 'Sustainability Services',
     description: 'Implement strategic renewable energy assets to aggressively reduce environmental impact.',
-    image: '/sustainability.png'
+    image: '/sustainability.png',
+    link: '/services#sustainability'
   }
 ];
 
 export function Services() {
   return (
-    <section id="solutions" className="py-32 bg-[#0F1115] relative border-t border-white/5">
+    <section id="services" className="py-32 bg-[#0F1115] relative border-t border-white/5">
       <div className="container mx-auto px-6 max-w-7xl">
         
         {/* Header Section - Editorial Style */}
@@ -41,7 +45,7 @@ export function Services() {
               Capabilities
             </span>
             <h2 className="text-4xl md:text-5xl font-heading font-light text-white tracking-tight leading-tight">
-              Our Energy Solutions
+              Our Energy Services
             </h2>
           </div>
           <div className="max-w-md">
@@ -53,9 +57,10 @@ export function Services() {
 
         {/* Grid Section - Architectural / Swiss Design */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-t border-l border-white/10">
-          {solutions.map((solution, index) => (
-            <div 
+          {services.map((solution, index) => (
+            <a 
               key={index}
+              href={solution.link}
               className="group relative border-r border-b border-white/10 p-8 lg:p-10 transition-colors duration-700 hover:bg-white/[0.02] flex flex-col h-full"
             >
               {/* Image Container */}
@@ -87,7 +92,7 @@ export function Services() {
                   {solution.description}
                 </p>
               </div>
-            </div>
+            </a>
           ))}
         </div>
 

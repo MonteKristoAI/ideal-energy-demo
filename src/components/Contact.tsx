@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 
 export function Contact() {
   return (
-    <section className="bg-[#050505] relative border-t border-white/5 py-32 overflow-hidden">
+    <section id="contact" className="bg-[#050505] relative border-t border-white/5 py-32 overflow-hidden">
       {/* Background Glow */}
       <div className="absolute top-1/2 right-1/4 w-[600px] h-[600px] bg-yellow-500/5 rounded-full blur-[150px] pointer-events-none -translate-y-1/2"></div>
 

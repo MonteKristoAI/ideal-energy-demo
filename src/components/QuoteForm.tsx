@@ -54,7 +54,7 @@ export function QuoteForm() {
   };
 
   return (
-    <section className="py-32 md:py-48 bg-[#050505] relative border-t border-white/5 overflow-hidden">
+    <section id="quote" className="py-32 md:py-48 bg-[#050505] relative border-t border-white/5 overflow-hidden">
       {/* Background Ambient Glow */}
       <div className="absolute top-1/2 right-0 w-[800px] h-[800px] bg-yellow-500/5 rounded-full blur-[150px] pointer-events-none translate-x-1/2"></div>
 

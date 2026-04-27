@@ -8,7 +8,6 @@ import { SocialProof } from '../components/SocialProof';
 import { QuoteForm } from '../components/QuoteForm';
 import { FeaturedBlog } from '../components/FeaturedBlog';
 import { AboutUs } from '../components/AboutUs';
-import { Contact } from '../components/Contact';
 import { Footer } from '../components/Footer';
 
 export default function Home() {
@@ -25,7 +24,6 @@ export default function Home() {
         <QuoteForm />
         <AboutUs />
         <FeaturedBlog />
-        <Contact />
       </main>
       <Footer />
     </div>

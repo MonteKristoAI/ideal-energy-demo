@@ -56,14 +56,14 @@ export function AboutUs() {
                 </p>
               </div>
 
-              <button className="group flex items-center gap-4 text-white hover:text-yellow-400 transition-colors duration-300">
+              <a href="/about" className="group flex items-center gap-4 text-white hover:text-yellow-400 transition-colors duration-300 inline-flex">
                 <span className="uppercase tracking-widest text-sm font-medium">
                   Discover Our Heritage
                 </span>
                 <span className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:border-yellow-400/50 group-hover:bg-yellow-400/10 transition-all duration-300">
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
                 </span>
-              </button>
+              </a>
             </motion.div>
           </div>
         </div>

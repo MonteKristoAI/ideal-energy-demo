@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from 'next/font/google';
 import "./globals.css";
+import { Chatbot } from "../components/Chatbot";
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 const poppins = Poppins({ weight: ['500', '600', '700', '800'], subsets: ['latin'], variable: '--font-heading' });
 
 export const metadata: Metadata = {
-  title: "Ideal Energy | Commercial Renewable Energy Solutions",
+  title: "Ideal Energy | Commercial Renewable Energy Services",
   description: "Ideal Energy transforms commercial real estate into high-performing energy assets. We navigate the complexities of procurement, efficiency, and renewable integration.",
   openGraph: {
-    title: "Ideal Energy | Commercial Renewable Energy Solutions",
+    title: "Ideal Energy | Commercial Renewable Energy Services",
     description: "Ideal Energy transforms commercial real estate into high-performing energy assets. We navigate the complexities of procurement, efficiency, and renewable integration.",
     url: "https://idealenergyllc.com",
     siteName: "Ideal Energy LLC",
@@ -48,8 +49,9 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`bg-brand-bg text-white font-sans antialiased selection:bg-white/20 selection:text-white ${inter.variable} ${poppins.variable}`}>
+      <body className={`bg-brand-bg text-white font-sans antialiased selection:bg-white/20 selection:text-white overflow-x-hidden ${inter.variable} ${poppins.variable}`}>
         {children}
+        <Chatbot />
       </body>
     </html>
   );

@@ -16,10 +16,10 @@ export function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '#' },
-    { name: 'Solutions', href: '#solutions' },
-    { name: 'Energy Storage', href: '#' },
-    { name: 'About Us', href: '#' },
+    { name: 'Home', href: '/' },
+    { name: 'Services', href: '/services' },
+    { name: 'About Us', href: '/about' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   return (
@@ -34,7 +34,7 @@ export function Navbar() {
         }`}
       >
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 group">
+        <a href="/" className="flex items-center gap-2 group">
           <div className="w-10 h-10 rounded-full bg-brand-secondary/10 flex items-center justify-center border border-brand-secondary/30 group-hover:bg-brand-secondary/20 transition-colors">
             <Sun className="w-6 h-6 text-brand-secondary" />
           </div>
@@ -58,9 +58,9 @@ export function Navbar() {
               </li>
             ))}
           </ul>
-          <button className="bg-brand-accent hover:bg-yellow-400 text-brand-primary font-bold py-2 px-5 rounded-full transition-all transform hover:scale-105 hover:shadow-[0_0_20px_rgba(255,193,7,0.4)] text-sm">
+          <a href="/#quote" className="bg-yellow-400 text-black font-bold py-2 px-5 rounded-full transition-all transform hover:scale-105 hover:shadow-[0_0_20px_rgba(255,193,7,0.4)] text-sm">
             Get Quote
-          </button>
+          </a>
         </nav>
 
         {/* Mobile Menu Button */}

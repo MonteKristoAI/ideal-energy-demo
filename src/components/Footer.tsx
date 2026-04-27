@@ -44,7 +44,7 @@ export function Footer() {
               <ul className="space-y-4">
                 {['About Us', 'Our Methodology', 'Insights & News', 'Careers', 'Contact'].map((link) => (
                   <li key={link}>
-                    <a href="#" className="text-white/50 hover:text-white transition-colors font-light text-sm">
+                    <a href={link === 'Contact' ? '/contact' : link === 'About Us' ? '/about' : '#'} className="text-white/50 hover:text-white transition-colors font-light text-sm">
                       {link}
                     </a>
                   </li>
