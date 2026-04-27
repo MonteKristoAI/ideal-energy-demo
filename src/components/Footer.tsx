@@ -31,7 +31,7 @@ export function Footer() {
               <ul className="space-y-4">
                 {['Energy Procurement', 'Cost Reduction', 'System Engineering', 'Battery Storage', 'Carbon Offset'].map((link) => (
                   <li key={link}>
-                    <a href="#" className="text-white/50 hover:text-white transition-colors font-light text-sm">
+                    <a href="/services" className="text-white/50 hover:text-white transition-colors font-light text-sm">
                       {link}
                     </a>
                   </li>
@@ -44,7 +44,7 @@ export function Footer() {
               <ul className="space-y-4">
                 {['About Us', 'Our Methodology', 'Insights & News', 'Careers', 'Contact'].map((link) => (
                   <li key={link}>
-                    <a href={link === 'Contact' ? '/contact' : link === 'About Us' ? '/about' : '#'} className="text-white/50 hover:text-white transition-colors font-light text-sm">
+                    <a href={link === 'Contact' ? '/contact' : link === 'About Us' ? '/about' : link === 'Insights & News' ? '/blog' : '#'} className="text-white/50 hover:text-white transition-colors font-light text-sm">
                       {link}
                     </a>
                   </li>

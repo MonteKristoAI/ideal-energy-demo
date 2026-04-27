@@ -109,9 +109,9 @@ export function Navbar() {
                 </a>
               ))}
               <div className="mt-auto pb-8">
-                <button className="w-full bg-brand-accent text-brand-primary font-bold py-4 rounded-xl text-lg hover:bg-yellow-400 transition-colors shadow-lg">
+                <a href="/#quote" onClick={() => setIsMobileMenuOpen(false)} className="block text-center w-full bg-brand-accent text-brand-primary font-bold py-4 rounded-xl text-lg hover:bg-yellow-400 transition-colors shadow-lg">
                   Get an Estimate Now
-                </button>
+                </a>
               </div>
             </div>
           </motion.div>

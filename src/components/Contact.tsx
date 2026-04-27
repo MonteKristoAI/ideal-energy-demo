@@ -1,7 +1,17 @@
 "use client";
 import { ArrowRight } from 'lucide-react';
 
+import { useState } from 'react';
+
 export function Contact() {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitted(true);
+    setTimeout(() => setIsSubmitted(false), 3000);
+  };
+
   return (
     <section id="contact" className="bg-[#050505] relative border-t border-white/5 py-32 overflow-hidden">
       {/* Background Glow */}
@@ -53,7 +63,7 @@ export function Contact() {
               {/* Premium Top Border on the Card */}
               <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-yellow-500/50 via-yellow-500/10 to-transparent"></div>
 
-              <form className="space-y-10" onSubmit={(e) => e.preventDefault()}>
+              <form className="space-y-10" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                   <div className="relative">
                     <input 
@@ -105,12 +115,12 @@ export function Contact() {
 
                 <button 
                   type="submit"
-                  className="group w-full flex items-center justify-between text-white hover:text-yellow-400 transition-colors duration-300 mt-6 pt-4 border-t border-white/5"
+                  className={`group w-full flex items-center justify-between transition-colors duration-300 mt-6 pt-4 border-t border-white/5 ${isSubmitted ? 'text-yellow-400' : 'text-white hover:text-yellow-400'}`}
                 >
                   <span className="uppercase tracking-widest text-sm font-semibold">
-                    Send Message
+                    {isSubmitted ? 'Message Sent Successfully!' : 'Send Message'}
                   </span>
-                  <span className="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:border-yellow-400/50 group-hover:bg-yellow-400/10 transition-all duration-300">
+                  <span className={`w-14 h-14 rounded-full border flex items-center justify-center transition-all duration-300 ${isSubmitted ? 'border-yellow-400 bg-yellow-400/20' : 'border-white/20 group-hover:border-yellow-400/50 group-hover:bg-yellow-400/10'}`}>
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1.5 transition-transform duration-300" />
                   </span>
                 </button>
