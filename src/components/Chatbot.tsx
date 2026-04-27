@@ -6,10 +6,21 @@ import { usePathname } from 'next/navigation';
 
 export function Chatbot() {
   const pathname = usePathname();
-  const [isOpen, setIsOpen] = useState(pathname === '/');
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    setIsOpen(pathname === '/');
+    let timeout: NodeJS.Timeout;
+    if (pathname === '/') {
+      timeout = setTimeout(() => {
+        setIsOpen(true);
+      }, 5000);
+    } else {
+      setIsOpen(false);
+    }
+    
+    return () => {
+      if (timeout) clearTimeout(timeout);
+    };
   }, [pathname]);
 
   return (
