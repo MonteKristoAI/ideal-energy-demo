@@ -7,7 +7,17 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
 
-const servicesData = [
+interface ServiceType {
+  id: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  extended: string;
+  image: string;
+  flipImage?: boolean;
+}
+
+const servicesData: ServiceType[] = [
   {
     id: 'procurement',
     title: 'Energy Procurement',
@@ -30,7 +40,8 @@ const servicesData = [
     subtitle: 'Intelligent Infrastructure',
     description: 'Optimize facilities and systems to lower energy consumption and enhance structural performance.',
     extended: 'True efficiency goes beyond simple LED retrofits. We engineer comprehensive building optimizations integrating smart sensors, automated HVAC controls, and intelligent load-balancing. Our systems learn from your daily operational cadences, dynamically adjusting energy flow to guarantee peak performance. We ensure your facility operates at maximum productivity while consuming the absolute minimum.',
-    image: '/services/efficiency.png'
+    image: '/services/efficiency.png',
+    flipImage: true
   },
   {
     id: 'sustainability',
@@ -42,7 +53,7 @@ const servicesData = [
   }
 ];
 
-function ServiceSection({ service, index }: { service: typeof servicesData[0], index: number }) {
+function ServiceSection({ service, index }: { service: ServiceType, index: number }) {
   const isEven = index % 2 === 0;
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -60,7 +71,7 @@ function ServiceSection({ service, index }: { service: typeof servicesData[0], i
           src={service.image}
           alt={service.title}
           fill
-          className="object-cover opacity-60"
+          className={`object-cover opacity-60 ${service.flipImage ? '-scale-x-100' : ''}`}
           sizes="100vw"
         />
       </motion.div>
@@ -123,7 +134,7 @@ export default function ServicesPage() {
       <main className="flex-grow">
         
         {/* Services Hero */}
-        <section className="min-h-[80vh] flex items-center relative overflow-hidden bg-[#050505]">
+        <section className="min-h-screen pb-32 flex items-center relative overflow-hidden bg-[#050505]">
           {/* Hero Background Image */}
           <div className="absolute inset-0 w-full h-full">
             <Image 
