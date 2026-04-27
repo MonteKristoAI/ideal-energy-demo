@@ -40,40 +40,38 @@ The latest generation of panels offers zero light-induced degradation and better
 If your commercial property is not generating its own power by the end of this year, you are leaving substantial capital on the table. Ideal Energy is at the forefront of this revolution, providing turnkey EPC services that guarantee performance and maximize returns.
     `,
     coverImage: "/blog/solar-roi.png",
-    author: "Milan K.",
+    author: "Ideal Energy",
     date: "April 26, 2026",
     readTime: "4 min read"
   },
   {
     id: "2",
-    title: "Navigating Hawaii's Energy Regulations for Businesses",
-    slug: "navigating-hawaii-energy-regulations-businesses",
-    excerpt: "Hawaii has some of the most complex but rewarding renewable energy frameworks. Learn how to leverage Act 204 and HECO programs to your advantage.",
+    title: "Maximizing Commercial Property Value with Solar Integration",
+    slug: "maximizing-commercial-property-value-solar",
+    excerpt: "Integrating solar doesn't just reduce your energy bill—it significantly increases the capitalization rate and overall value of your commercial real estate.",
     content: `
-## The Unique Landscape of Hawaii's Energy Market
+## Solar as a Value Multiplier
 
-Hawaii's geographical isolation means it has historically relied heavily on imported fossil fuels, resulting in the highest electricity rates in the nation. However, this has also made it the ultimate testing ground and leader in renewable energy adoption.
+For decades, commercial real estate value has been calculated primarily through Net Operating Income (NOI). By drastically reducing one of the largest variable expenses—energy—solar arrays directly increase NOI, leading to a higher property valuation.
 
-### Understanding Act 204
+### The Mathematics of Valuation
 
-Act 204 mandates rigorous renewable portfolio standards. For commercial businesses, this means transitioning to clean energy is not just economically viable—it's becoming a regulatory necessity.
+When you install a commercial solar system, you are essentially pre-purchasing 25 years of electricity at a fraction of the cost. 
 
-1. **HECO Peak Load Management:** Hawaiian Electric Company (HECO) heavily incentivizes businesses that can shift their peak loads. 
-2. **Battery Bonus Programs:** Commercial entities that install solar paired with storage can take advantage of lucrative grid-services programs.
-3. **Streamlined Permitting:** Recent legislative pushes have aimed to expedite the permitting process for large-scale commercial solar, reducing the time-to-value for property owners.
+1. **Expense Reduction:** If a solar system saves a property $50,000 annually in energy costs, that is a direct $50,000 increase in NOI.
+2. **Cap Rate Application:** In a market with a 5% capitalization rate, a $50,000 increase in NOI translates to a **$1,000,000 increase in property value**.
+3. **Lease Premiums:** Tenants are increasingly demanding green buildings to meet their own ESG (Environmental, Social, and Governance) goals, allowing property owners to command higher lease rates.
+
+### Future-Proofing Assets
+
+Beyond immediate financial returns, solar integration future-proofs assets against volatile utility rates and impending environmental regulations. Buildings without integrated renewable energy are quickly becoming obsolete in the eyes of institutional investors.
 
 ### Strategic Deployment
 
-For businesses in Oahu or Maui, the strategy is clear:
-
-* Maximize roof space for generation.
-* Implement smart load-shifting technologies.
-* Engage with energy consultants who understand the local AHJ (Authority Having Jurisdiction) requirements.
-
-By navigating these regulations proactively, Hawaii businesses can transform their energy overhead from a massive liability into a predictable, fixed, and low-cost operational expense.
+The strategy is clear: transform passive rooftops into active revenue generators. By engaging with expert energy consultants, property owners can navigate the complexities of installation and reap the massive financial rewards.
     `,
     coverImage: "/blog/hawaii-energy.png",
-    author: "Alex B.",
+    author: "Ideal Energy",
     date: "April 22, 2026",
     readTime: "5 min read"
   },
@@ -94,10 +92,6 @@ Commercial electricity bills are not just based on the *amount* of energy used (
 * **How it works:** Smart battery systems monitor your facility's energy usage in real-time. When usage spikes (e.g., HVAC systems turning on simultaneously), the battery discharges power, "shaving" the peak off the utility grid draw.
 * **The Result:** Massive reductions in demand charges without changing operational behavior.
 
-### The 'Thermal Battery' Concept
-
-At Ideal Energy, we also explore innovative concepts like utilizing existing infrastructure—such as massive water heaters in hotels—as 'thermal batteries' to store excess solar energy as heat during the day, reducing the load during the evening peak.
-
 ### Grid Resilience
 
 In an era of increasing extreme weather events, grid instability is a massive risk for businesses. A commercial battery system ensures that your critical operations—servers, refrigeration, security systems—remain online during outages.
@@ -105,7 +99,7 @@ In an era of increasing extreme weather events, grid instability is a massive ri
 Battery storage transforms a passive building into an active, intelligent energy asset.
     `,
     coverImage: "/blog/battery-storage.png",
-    author: "Elena R.",
+    author: "Ideal Energy",
     date: "April 18, 2026",
     readTime: "6 min read"
   }
