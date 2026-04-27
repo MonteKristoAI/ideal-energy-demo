@@ -123,11 +123,25 @@ export default function ServicesPage() {
       <main className="flex-grow">
         
         {/* Services Hero */}
-        <section className="min-h-[70vh] flex items-center relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-yellow-500/10 rounded-full blur-[150px] pointer-events-none -translate-y-1/2"></div>
-          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-brand-secondary/5 rounded-full blur-[150px] pointer-events-none translate-y-1/2"></div>
+        <section className="min-h-[80vh] flex items-center relative overflow-hidden bg-[#050505]">
+          {/* Hero Background Image */}
+          <div className="absolute inset-0 w-full h-full">
+            <Image 
+              src="/services/hero.png"
+              alt="Ideal Energy Commercial Building"
+              fill
+              className="object-cover opacity-50"
+              priority
+              sizes="100vw"
+            />
+          </div>
           
-          <div className="container mx-auto px-6 max-w-6xl relative z-10 text-center pt-32">
+          {/* Hero Gradients to blend into content below */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/40 via-[#050505]/60 to-[#050505] z-10"></div>
+          
+          <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-yellow-500/10 rounded-full blur-[150px] pointer-events-none -translate-y-1/2 z-10"></div>
+          
+          <div className="container mx-auto px-6 max-w-6xl relative z-20 text-center pt-32">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
