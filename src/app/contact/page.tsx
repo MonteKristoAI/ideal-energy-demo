@@ -11,7 +11,7 @@ export default function ContactPage() {
         {/* Full Width Google Maps */}
         <div className="w-full h-[400px] md:h-[500px] mt-auto relative z-10 border-t border-white/5 grayscale-[0.8] opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-700">
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110825.21558230232!2d-95.70014295!3d29.77196015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640d0bd1c944733%3A0xc644b94eb477e682!2sEnergy%20Corridor%2C%20Houston%2C%20TX!5e0!3m2!1sen!2sus!4v1714240500000!5m2!1sen!2sus" 
+            src="https://maps.google.com/maps?q=100%20Energy%20Corridor%2C%20Suite%204500%2C%20Houston%2C%20TX%2077079&t=&z=14&ie=UTF8&iwloc=&output=embed" 
             width="100%" 
             height="100%" 
             style={{ border: 0 }} 
